@@ -28,7 +28,8 @@ class Pygame_ext:
 
         if resizable:
             self.screen = pygame.display.set_mode(size, RESIZABLE)
-
+        self.screen = pygame.display.set_mode(size)
+        
         self.left_clicks_down = Events()
         self.left_clicks_up = Events()
         self.right_clicks_down = Events()
